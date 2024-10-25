@@ -23,15 +23,15 @@
         <td><xsl:value-of select="artist"/></td>
         <td><xsl:value-of select="country"/></td>
         <td ><xsl:value-of select="price"/></td>
-        <xsl:choose>
-        <xsl:when test="price &lt; 10">
-          <td style="\1F7E2">&#128994;</td>
-        </xsl:when>
-        <xsl:otherwise>
-          <td style="\1F534">&#128308;</td>
 
-        </xsl:otherwise>
-      </xsl:choose>
+  
+      <xsl:if test="price &lt; 10">
+         <td style="\1F7E2">&#128994;</td>
+      </xsl:if>
+
+       <xsl:if test="price &gt; 10">
+          <td style="\1F534">&#128308;</td>
+      </xsl:if>
 
       </tr>
   
