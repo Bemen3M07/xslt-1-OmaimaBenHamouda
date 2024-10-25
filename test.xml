@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="test.xslt"?>
+<Estudiantes>
+    <Estudiante>
+        <Nombre id="2">Omaima</Nombre>
+        <Apellido>maima</Apellido>
+        <ciclo>DAM</ciclo>
+        <Nota>10</Nota>
+    </Estudiante>
+
+    <Estudiante>
+        <Nombre id="3">Jorge</Nombre>
+        <Apellido>Jorjito</Apellido>
+        <ciclo>DAM</ciclo>
+        <Nota>6</Nota>
+    </Estudiante>
+
+    <Estudiante>
+        <Nombre id="1">Manu</Nombre>
+        <Apellido>manuelita</Apellido>
+        <ciclo>DAM</ciclo>
+        <Nota>8</Nota>
+    </Estudiante>
+
+</Estudiantes>

@@ -10,13 +10,22 @@
       <th style="text-align:left">Artist</th>
       <th style="text-align:left">Country</th>
       <th style="text-align:left">Price</th>
-
-
     </tr>
 
-    <!--<xsl:for-each select="catalog/cd[country='USA']">-->
-    <xsl:for-each select="catalog/cd">
-      <!--<xsl:sort select="artist"/>-->
+  <xsl:apply-templates/>
+  </table>
+
+  </body>
+</html>
+</xsl:template>
+
+
+
+
+
+
+<xsl:template match="catalog/cd">
+  <!--<xsl:sort select="artist"/>-->
       
       <tr>
         <td><xsl:value-of select="title"/></td>
@@ -34,11 +43,12 @@
       </xsl:if>
 
       </tr>
-  
-    </xsl:for-each>
-  </table>
-</body>
-</html>
+    <!--<xsl:for-each select="catalog/cd[country='USA']">-->
 </xsl:template>
+
+
+  
+
+
 </xsl:stylesheet>
 
